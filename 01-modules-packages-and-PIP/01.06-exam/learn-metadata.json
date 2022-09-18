@@ -1,0 +1,410 @@
+{
+    "materialType": "test-exam",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Зная, что функция с именем `fun()` находится в модуле с именем `mod`, выберите правильный способ ее импорта:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`from mod import fun`",
+                    "correct": true
+                },
+                {
+                    "answer": "`import fun`",
+                    "correct": false
+                },
+                {
+                    "answer": "`from fun import mod`",
+                    "correct": false
+                },
+                {
+                    "answer": "`import fun from mod`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Зная, что функция с именем `fun()` находится в модуле с именем `mod`, и она была импортирована с использованием следующей строки:\n\n\n```import mod```\n\n\nВыберите способ ее вызова в Вашем коде:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`mod.fun()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`fun()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`mod‑>fun()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`mod::fun()`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Функция, возвращающая список всех объектов, доступных в модуле, называется:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`dir()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`content()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`listmodule()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`entities()`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Файл `pyc` содержит:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "скомпилированный код Python",
+                    "correct": true
+                },
+                {
+                    "answer": "исходный код Python",
+                    "correct": false
+                },
+                {
+                    "answer": "интерпретатор Python",
+                    "correct": false
+                },
+                {
+                    "answer": "компилятор Python",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Когда модуль импортируется, его содержимое:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "выполняется один раз (неявно)",
+                    "correct": true
+                },
+                {
+                    "answer": "выполняется столько раз, сколько он импортирован",
+                    "correct": false
+                },
+                {
+                    "answer": "игнорируется",
+                    "correct": false
+                },
+                {
+                    "answer": "может быть выполнено (явно)",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Предопределенная переменная Python, в которой хранится имя текущего модуля, называется:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`__name__`",
+                    "correct": true
+                },
+                {
+                    "answer": "`__module__`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__modname__`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__mod__`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующее утверждение:\n\n\n```from a.b import c```\n\n\nВызывает импорт:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "объекта `c` из модуля `b` из пакета `a`",
+                    "correct": true
+                },
+                {
+                    "answer": "объекта `c` из модуля `a` из пакета `b`",
+                    "correct": false
+                },
+                {
+                    "answer": "объекта `a` из модуля `b` из пакета `c`",
+                    "correct": false
+                },
+                {
+                    "answer": "объекта `b` из модуля `a` из пакета `c`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какое ожидаемое значение присваивается переменной `result` после выполнения следующего кода?\n\n\n```import math\n\nresult = math.e != math.pow(2, 4)\nprint(int(result))\n\n```",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`1`",
+                    "correct": true
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                },
+                {
+                    "answer": "`True`",
+                    "correct": false
+                },
+                {
+                    "answer": "`False`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```from random import randint\n\nfor i in range(2):\n    print(randint(1, 2), end='')\n\n```",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`11`, `12`, `21` или `22`",
+                    "correct": true
+                },
+                {
+                    "answer": "\n <p>`12` или `21`<p> \n",
+                    "correct": false
+                },
+                {
+                    "answer": "Существуют миллионы возможных комбинаций, и точный результат невозможно предсказать.",
+                    "correct": false
+                },
+                {
+                    "answer": "`12`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выберите **верные** утверждения. (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Функция `system` из модуля `platform` возвращает строку с названием Вашей ОС.",
+                    "correct": true
+                },
+                {
+                    "answer": "Функция `version` из модуля `platform` возвращает строку с версией Вашей ОС.",
+                    "correct": true
+                },
+                {
+                    "answer": "Функция `version` из модуля `platform` возвращает строку с Вашей версией Python.",
+                    "correct": false
+                },
+                {
+                    "answer": "Функция `processor` из модуля `platform` возвращает целое число с количеством процессов, запущенных в настоящее время в Вашей ОС.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Во время первого импорта модуля Python развертывает файлы _pyc_ в каталоге с именем:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`__pycache__`",
+                    "correct": true
+                },
+                {
+                    "answer": "`__init__`",
+                    "correct": false
+                },
+                {
+                    "answer": "`hashbang`",
+                    "correct": false
+                },
+                {
+                    "answer": "`mymodules`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Орграф, записанный как `#!`, используется, чтобы:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "сообщить Unix или Unix-подобной ОС, как выполнять содержимое файла Python",
+                    "correct": true
+                },
+                {
+                    "answer": "сообщить ОС MS Windows, как выполнять содержимое файла Python",
+                    "correct": false
+                },
+                {
+                    "answer": "сделать конкретный объект модуля приватным",
+                    "correct": false
+                },
+                {
+                    "answer": "создать строку документации",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Список зависимостей пакетов можно получить из `pip` с помощью команды:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`show`",
+                    "correct": true
+                },
+                {
+                    "answer": "`deps`",
+                    "correct": false
+                },
+                {
+                    "answer": "`list`",
+                    "correct": false
+                },
+                {
+                    "answer": "`dir`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Команда `pip list` показывает список:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "локально установленных пакетов",
+                    "correct": true
+                },
+                {
+                    "answer": "всех пакетов, доступных в PyPI",
+                    "correct": false
+                },
+                {
+                    "answer": "доступных команд pip",
+                    "correct": false
+                },
+                {
+                    "answer": "устаревших локальных пакетов",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какие утверждения о команде `pip search` **верны**? (Выберите **три** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Для работы требуется рабочее подключение к Интернету.",
+                    "correct": true
+                },
+                {
+                    "answer": "Она просматривает все пакеты PyPI.",
+                    "correct": true
+                },
+                {
+                    "answer": "Она ищет только по именам пакетов.",
+                    "correct": false
+                },
+                {
+                    "answer": "Все поиски ограничиваются локально установленными пакетами.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какие утверждения о команде `pip install` **верны**? (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Она устанавливает пакет в масштабе всей системы, только если указан параметр `--system`.",
+                    "correct": false
+                },
+                {
+                    "answer": "Она устанавливает пакет для отдельного пользователя, только если указан параметр `--user`.",
+                    "correct": true
+                },
+                {
+                    "answer": "Она всегда устанавливает самую новую версию пакета, которая не может быть изменена.",
+                    "correct": false
+                },
+                {
+                    "answer": "Она позволяет пользователю установить определенную версию пакета.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение об обновлении уже установленных пакетов Python **верно**?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Это автоматический процесс, не требующий внимания пользователя.",
+                    "correct": false
+                },
+                {
+                    "answer": "Его можно произвести только путем удаления и повторной установки пакетов.",
+                    "correct": false
+                },
+                {
+                    "answer": "Его можно произвести, переустановив пакет с помощью команды `reinstall`.",
+                    "correct": false
+                },
+                {
+                    "answer": "Оно выполняется командой `install` с параметром `-U`.",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Какую команду `pip` можно использовать для удаления установленного пакета?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`pip uninstall package`",
+                    "correct": true
+                },
+                {
+                    "answer": "`pip remove package`",
+                    "correct": false
+                },
+                {
+                    "answer": "`pip install --uninstall package`",
+                    "correct": false
+                },
+                {
+                    "answer": "`pip --uninstall package`",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

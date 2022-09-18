@@ -1,0 +1,10 @@
+{
+    "title": "Полезные модули",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 2,
+    "duration": "PT0H50M",
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "assetsPath": "assets"
+}

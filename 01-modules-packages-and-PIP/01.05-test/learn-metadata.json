@@ -1,0 +1,222 @@
+{
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H15M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Пространство имен это:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "пространство, в котором существуют имена",
+                    "correct": true
+                },
+                {
+                    "answer": "имя с пробелом",
+                    "correct": false
+                },
+                {
+                    "answer": "пространство с именем",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если Вы хотите импортировать `pi` из `math`, как правильно это сделать?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`from math import pi`",
+                    "correct": true
+                },
+                {
+                    "answer": "`import pi from math`",
+                    "correct": false
+                },
+                {
+                    "answer": "`from pi import math`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что из следующего **верно**?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "пакеты могут содержать модули",
+                    "correct": true
+                },
+                {
+                    "answer": "модули могут содержать модули",
+                    "correct": false
+                },
+                {
+                    "answer": "модули могут содержать пакеты",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что Вы можете сделать, чтобы указать, что объект модуля следует рассматривать как **приватный**? (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "вы можете пометить имя объекта с помощью префикса `_` (одинарное подчеркивание)",
+                    "correct": true
+                },
+                {
+                    "answer": "Вы можете пометить имя объекта с помощью префикса `__` (двойное подчеркивание)",
+                    "correct": true
+                },
+                {
+                    "answer": "Вы можете пометить имя объекта префиксом `#`",
+                    "correct": false
+                },
+                {
+                    "answer": "ничего - все сущности модуля по умолчанию скрыты",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Репозиторий PWG-lead, собирающий открытый код Python, называется:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "PyPI",
+                    "correct": true
+                },
+                {
+                    "answer": "PyCR",
+                    "correct": false
+                },
+                {
+                    "answer": "PWGR",
+                    "correct": false
+                },
+                {
+                    "answer": "PyRep",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "PyPI часто называют:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Сырным Магазином",
+                    "correct": true
+                },
+                {
+                    "answer": "Магазином Py ПО",
+                    "correct": false
+                },
+                {
+                    "answer": "Игрой Python",
+                    "correct": false
+                },
+                {
+                    "answer": "pyΠ",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Название `pip` происходит от:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "_pip installs packages_",
+                    "correct": true
+                },
+                {
+                    "answer": "_peripheral interchange program_",
+                    "correct": false
+                },
+                {
+                    "answer": "_python internal packager_",
+                    "correct": false
+                },
+                {
+                    "answer": "_package inside package_",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какие утверждения о `pip` **верны**? (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "он всегда доступен, потому что он установлен вместе с Python",
+                    "correct": false
+                },
+                {
+                    "answer": "есть две разные реализации _pip_, одна для Python 2, а другая для Python 3",
+                    "correct": true
+                },
+                {
+                    "answer": "это инструмент графического интерфейса пользователя",
+                    "correct": false
+                },
+                {
+                    "answer": "это инструмент командной строки",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Когда Вы используете `pip` для установки пакета, который требует одной или нескольких зависимостей, тогда:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "pip обо всем позаботится сам",
+                    "correct": true
+                },
+                {
+                    "answer": "Вам нужно будет установить все зависимости самостоятельно **перед** установкой желаемого пакета",
+                    "correct": false
+                },
+                {
+                    "answer": "Вам придется установить все зависимости самостоятельно **после** установки желаемого пакета",
+                    "correct": false
+                },
+                {
+                    "answer": "пакет установит все зависимости при первом запуске",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какую из следующих команд Вы можете использовать для определения своей версии `pip`? (Выберите **три** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "`pip --version`",
+                    "correct": true
+                },
+                {
+                    "answer": "`pip version`",
+                    "correct": true
+                },
+                {
+                    "answer": "`pip -version`",
+                    "correct": true
+                },
+                {
+                    "answer": "`pip ---version`",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

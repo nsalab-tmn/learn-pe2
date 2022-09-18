@@ -1,0 +1,10 @@
+{
+    "title": "Python Package Installer (PIP)",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 2,
+    "duration": "PT1H2M",
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "assetsPath": "assets"
+}
