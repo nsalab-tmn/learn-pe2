@@ -1,0 +1,198 @@
+{
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H15M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Часть Вашего кода, в которой, по Вашему мнению, может возникнуть исключение, должна быть помещена внутрь:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ветви `try:`",
+                    "correct": true
+                },
+                {
+                    "answer": "ветви `except:`",
+                    "correct": false
+                },
+                {
+                    "answer": "ветви `exception:`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Часть Вашего кода, в которой происходит обработка исключения, должна быть помещена внутрь:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ветви `try:`",
+                    "correct": false
+                },
+                {
+                    "answer": "ветви `except:`",
+                    "correct": true
+                },
+                {
+                    "answer": "ветви `exception:`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выберите **верные** утверждения. (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Вы **можете** использовать несколько ветвей `except:` для обработки нескольких исключений, поступающих из одной и той же ветки `try: `",
+                    "correct": true
+                },
+                {
+                    "answer": "Вы **не можете** использовать несколько ветвей `except:` для обработки нескольких исключений, поступающих из одной и той же ветки `try: `",
+                    "correct": false
+                },
+                {
+                    "answer": "Разные ветви `except:` **должны** иметь уникальные имена исключений",
+                    "correct": true
+                },
+                {
+                    "answer": "Разные ветви `except:` **могут** иметь уникальные имена исключений",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Когда возникает исключение, мы говорим, что оно было:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "вызвано",
+                    "correct": true
+                },
+                {
+                    "answer": "брошено",
+                    "correct": false
+                },
+                {
+                    "answer": "сброшено",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какая из доступных ветвей `except:` принимается во внимание при возникновении исключения?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "первая подходящая",
+                    "correct": true
+                },
+                {
+                    "answer": "последняя подходящая",
+                    "correct": false
+                },
+                {
+                    "answer": "любая из подходящих",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Проверку (assertion) можно использовать, чтобы:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "остановить программу, когда некоторые данные имеют неправильные значения",
+                    "correct": true
+                },
+                {
+                    "answer": "сделать программиста более напористым",
+                    "correct": false
+                },
+                {
+                    "answer": "импортировать модуль",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Кодовая позиция - это:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "число, указывающее на символ",
+                    "correct": true
+                },
+                {
+                    "answer": "позиция, используемая для написания кода",
+                    "correct": false
+                },
+                {
+                    "answer": "код, содержащий позицию",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "`isalnum()` проверяет, содержит ли строка только буквы и цифры, и это:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "метод",
+                    "correct": true
+                },
+                {
+                    "answer": "модуль",
+                    "correct": false
+                },
+                {
+                    "answer": "функция",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выражение: `'mike > 'Mike'",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "равняется `True`",
+                    "correct": true
+                },
+                {
+                    "answer": "равняется `False`",
+                    "correct": false
+                },
+                {
+                    "answer": "некорректно",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Оператор `+=`, применительно к строкам выполняет:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "конкатенацию",
+                    "correct": true
+                },
+                {
+                    "answer": "умножение",
+                    "correct": false
+                },
+                {
+                    "answer": "вычитание",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

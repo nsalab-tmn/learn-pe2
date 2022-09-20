@@ -1,0 +1,66 @@
+{
+    "title": "СТРОКИ, МЕТОДЫ СТРОК И СПИСКОВ, ИСКЛЮЧЕНИЯ",
+    "tags": {
+        "$ref": "./material-tags.json"
+    },
+    "materialType": "course",
+    "materials": [
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.01-characters-strings-computers/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.02-strings-in-Python/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.03-string-methods/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.04-lab-your-own-split/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.05-strings-in-action-and-list-methods/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.06-lab-LED-display/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.07-strings-and-simple-programs/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.08-lab-improving-the-Caesar-cipher/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.09-lab-palindromes/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.10-lab-anagrams/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.11-lab-the-digit-of-life/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.12-lab-find-a-word/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.13-lab-sudoku/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.14-errors-the-programmers-daily-bread/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.15-anatomy-of-exceptions/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.16-useful-exceptions/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.17-lab-reading-ints-safely/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.18-test/learn-metadata.json"
+        },
+        {
+            "$ref": "02-strings-lists-and-exceptions/02.19-exam/learn-metadata.json"
+        }
+    ]
+}

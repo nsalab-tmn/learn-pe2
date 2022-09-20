@@ -1,0 +1,17 @@
+{
+    "title": "Палиндромы",
+    "materialType": "lab",
+    "description": "",
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "duration": "PT0H30M",
+    "difficulty": 1,
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {}
+}

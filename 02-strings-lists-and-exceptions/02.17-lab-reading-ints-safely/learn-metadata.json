@@ -1,0 +1,17 @@
+{
+    "title": "Безопасное чтение целых чисел",
+    "materialType": "lab",
+    "description": "",
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "duration": "PT0H25M",
+    "difficulty": 2,
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {}
+}

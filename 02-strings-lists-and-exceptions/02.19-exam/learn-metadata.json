@@ -1,0 +1,344 @@
+{
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H30M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Ввод блока `try:` подразумевает, что:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "некоторые инструкции из этого блока могут не выполняться",
+                    "correct": true
+                },
+                {
+                    "answer": "все инструкции из этого блока будут выполнены",
+                    "correct": false
+                },
+                {
+                    "answer": "ни одна из инструкций из этого блока не будет выполнена",
+                    "correct": false
+                },
+                {
+                    "answer": "блок будет опущен",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Безымянный блок `except`:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "должен быть последним",
+                    "correct": true
+                },
+                {
+                    "answer": "можно разместить где угодно",
+                    "correct": false
+                },
+                {
+                    "answer": "должен быть первым",
+                    "correct": false
+                },
+                {
+                    "answer": "не может использоваться, если использовался какой-либо именованный блок",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Самое верхнее исключение Python называется:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`BaseException`",
+                    "correct": true
+                },
+                {
+                    "answer": "`Exception`",
+                    "correct": false
+                },
+                {
+                    "answer": "`PythonException`",
+                    "correct": false
+                },
+                {
+                    "answer": "`TopException`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующее выражение:\n\n\n```assert var == 0```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "остановит программу, когда `var != 0`",
+                    "correct": true
+                },
+                {
+                    "answer": "остановит программу, когда `var == 0`",
+                    "correct": false
+                },
+                {
+                    "answer": "некорректно",
+                    "correct": false
+                },
+                {
+                    "answer": "не имеет эффекта",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```try:\n    print('5' / 0)\nexcept ArithmeticError:\n    print('arith')\nexcept ZeroDivisionError:\n    print('zero')\nexcept:\n    print('some')\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`some`",
+                    "correct": true
+                },
+                {
+                    "answer": "`arith`",
+                    "correct": false
+                },
+                {
+                    "answer": "`zero`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что из перечисленного является примерами встроенных **конкретных** исключений Python? (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "`IndexError`",
+                    "correct": true
+                },
+                {
+                    "answer": "`ImportError`",
+                    "correct": true
+                },
+                {
+                    "answer": "`ArithmeticError`",
+                    "correct": false
+                },
+                {
+                    "answer": "`BaseException`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "ASCII - это:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "сокращение от _Американский стандартный код для обмена информацией_ (American Standard Code for Information Interchange)",
+                    "correct": true
+                },
+                {
+                    "answer": "стандартное имя модуля Python",
+                    "correct": false
+                },
+                {
+                    "answer": "предопределенное имя переменной Python",
+                    "correct": false
+                },
+                {
+                    "answer": "название символа",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "UTF‑8 - это:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "форма кодирования кодовых позиций Unicode",
+                    "correct": true
+                },
+                {
+                    "answer": "имя версии Python",
+                    "correct": false
+                },
+                {
+                    "answer": "синоним _байта_",
+                    "correct": false
+                },
+                {
+                    "answer": "9-я версия стандарта UTF",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "UNICODE - это стандарт:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "как ASCII, но гораздо более обширный",
+                    "correct": true
+                },
+                {
+                    "answer": "для кодирования чисел с плавающей запятой",
+                    "correct": false
+                },
+                {
+                    "answer": "используемый программистами из университетов",
+                    "correct": false
+                },
+                {
+                    "answer": "почитаемый всей вселенной",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```x = '\\''\nprint(len(x))\n```\n\n\nвыводит:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`1`",
+                    "correct": true
+                },
+                {
+                    "answer": "`2`",
+                    "correct": false
+                },
+                {
+                    "answer": "`3`",
+                    "correct": false
+                },
+                {
+                    "answer": "`20`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```print(ord('c') - ord('a'))\n```\n\n\nвыводит:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`2`",
+                    "correct": true
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`3`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```print(chr(ord('z') ‑ 2))\n```\n\n\nвыводит:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`x`",
+                    "correct": true
+                },
+                {
+                    "answer": "`y`",
+                    "correct": false
+                },
+                {
+                    "answer": "`z`",
+                    "correct": false
+                },
+                {
+                    "answer": "`a`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n`print(3 * 'abc' + 'xyz')\n```\n\n\nвыводит:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`abcabcabcxyz`",
+                    "correct": true
+                },
+                {
+                    "answer": "`abcabcxyzxyz`",
+                    "correct": false
+                },
+                {
+                    "answer": "`abcxyzxyzxyz`",
+                    "correct": false
+                },
+                {
+                    "answer": "`xyzxyzxyzxyz`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```print('Mike' > \"Mikey\")\n```\n\n\nвыводит:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`False`",
+                    "correct": true
+                },
+                {
+                    "answer": "`True`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```print(float('1, 3'))\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "вызывает исключение `ValueError`",
+                    "correct": true
+                },
+                {
+                    "answer": "выводит `1.3`",
+                    "correct": false
+                },
+                {
+                    "answer": "выводит `1,3`",
+                    "correct": false
+                },
+                {
+                    "answer": "выводит `13`",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
