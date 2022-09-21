@@ -1,0 +1,198 @@
+{
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H15M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Подкласс обычно:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "более специализированный, чем его суперкласс",
+                    "correct": true
+                },
+                {
+                    "answer": "более общий, чем его суперкласс",
+                    "correct": false
+                },
+                {
+                    "answer": "является близнецом своего суперкласса",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Объект характеризуется следующими тремя признаками:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "имя, свойства, методы",
+                    "correct": true
+                },
+                {
+                    "answer": "имя, владелец, владение",
+                    "correct": false
+                },
+                {
+                    "answer": "недвижимость, поместья, земли",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Альтернативное название структуры данных, называемой _стеком_:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "LIFO",
+                    "correct": true
+                },
+                {
+                    "answer": "FIFO",
+                    "correct": false
+                },
+                {
+                    "answer": "FOLO",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Переменная, существующая как отдельная сущность в составе объекта, называется:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "переменной экземпляра",
+                    "correct": true
+                },
+                {
+                    "answer": "отдельной переменной",
+                    "correct": false
+                },
+                {
+                    "answer": "объектной переменной",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Функция, способная проверить, оснащен ли объект данным свойством, называется:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`hasattr()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`hasvar()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`hasprop()`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Есть ли способ проверить, является ли класс подклассом другого класса?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "да, есть функция, которая может это сделать",
+                    "correct": true
+                },
+                {
+                    "answer": "нет",
+                    "correct": false
+                },
+                {
+                    "answer": "это возможно, но только при особых условиях",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Функция с именем `super()` может использоваться для: ",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "доступа к атрибутам и/или методам суперкласса",
+                    "correct": true
+                },
+                {
+                    "answer": "того, чтобы сделать суперкласс",
+                    "correct": false
+                },
+                {
+                    "answer": "того, чтобы сделать класс лучше",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Исключение, определяемое пользователем:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "может быть производным от класса `Exception`",
+                    "correct": true
+                },
+                {
+                    "answer": "не должно быть производным от класса `Exception`",
+                    "correct": false
+                },
+                {
+                    "answer": "должно быть производным от класса `Exception`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выберите **верные** утверждения. (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Ветвь `finally` инструкции `try` выполняется **всегда**.",
+                    "correct": true
+                },
+                {
+                    "answer": "Свойство `args` - это кортеж, предназначенный для сбора всех аргументов, переданных конструктору класса.",
+                    "correct": true
+                },
+                {
+                    "answer": "Ветвь `finally` инструкции `try` **может** выполняться при соблюдении особых условий.",
+                    "correct": false
+                },
+                {
+                    "answer": "Вы **не можете** определять новые исключения как подклассы, производные от предопределенных исключений.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что выведет следующий код?\n\n\n```import math\n\ntry:\n    print(math.pow(2))\nexcept TypeError:\n    print(\"A\")\nelse:\n    print(\"B\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`A`",
+                    "correct": true
+                },
+                {
+                    "answer": "`B`",
+                    "correct": false
+                },
+                {
+                    "answer": "Программа вызовет исключение `ValueError`",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

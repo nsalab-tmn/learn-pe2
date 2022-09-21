@@ -1,0 +1,17 @@
+{
+    "title": "Стек с подсчетом",
+    "materialType": "lab",
+    "description": "",
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "duration": "PT0H45M",
+    "difficulty": 2,
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {}
+}

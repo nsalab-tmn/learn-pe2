@@ -1,0 +1,10 @@
+{
+    "title": "Основы ООП",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 2,
+    "duration": "PT0H35M",
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "assetsPath": "assets"
+}

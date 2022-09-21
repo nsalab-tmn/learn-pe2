@@ -1,0 +1,388 @@
+{
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H15M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Структура данных, описанная как _LIFO_, является:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "стеком",
+                    "correct": true
+                },
+                {
+                    "answer": "кучей",
+                    "correct": false
+                },
+                {
+                    "answer": "списком",
+                    "correct": false
+                },
+                {
+                    "answer": "деревом",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если конструктор класса объявлен, как показано ниже, какое из присвоений допустимо?\n\n\n````class Class:\n    def __init__(self):\n        pass\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`object = Class()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`object = Class(self)`",
+                    "correct": false
+                },
+                {
+                    "answer": "`object = Class(object)`",
+                    "correct": false
+                },
+                {
+                    "answer": "`object = Class`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если есть суперкласс с именем `A` и подкласс с именем `B`, какой из представленных вызовов Вы должны поместить вместо комментария?\n\n\n```class A:\n    def __init__(self):\n        self.a = 1\n\n\nclass B(A):\n    def __init__(self):\n        # Поместите сюда выбранную строку.\n        self.b = 2\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`A.__init__(self)`",
+                    "correct": true
+                },
+                {
+                    "answer": "`A.__init__()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__init__()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`A.__init__(1)`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков будет эффект от выполнения следующего кода?\n\n\n```class A:\n    def __init__(self,v):\n        self.__a = v + 1\n\n\na = A(0)\nprint(a.__a)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код вызовет исключение `AttributeError`",
+                    "correct": true
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что выведет следующий код?\n\n\n```class A:\n    def __init__(self,v = 1):\n        self.v = v\n\n    def set(self,v):\n        self.v = v\n        return v\n\n\na = A()\nprint(a.set(a.v + 1))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`2`",
+                    "correct": true
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`3`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что выведет следующий код?\n\n\n```class A:\n    X = 0\n    def __init__(self,v = 0):\n        self.Y = v\n        A.X += v\n\n\na = A()\nb = A(1)\nc = A(2)\nprint(c.X)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`3`",
+                    "correct": true
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что выведет следующий код?\n\n\n```class A:\n    A = 1\n\n\nprint(hasattr(A,'A'))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`True`",
+                    "correct": true
+                },
+                {
+                    "answer": "`False`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```class A:\n    def __init__(self):\n        pass\n\n\na = A(1)\nprint(hasattr(a,'A'))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "будет вызвано исключение",
+                    "correct": true
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`False`",
+                    "correct": false
+                },
+                {
+                    "answer": "`True`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```class A:\n    def __str__(self):\n        return 'a'\n\n\nclass B(A):\n    def __str__(self):\n        return 'b'\n\n\nclass C(B):\n    pass\n    \n\no = C()\nprint(o)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `b`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `a`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет `c`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```class A:\n    pass\n    \n\nclass B(A):\n    pass\n    \n\nclass C(B):\n    pass\n    \n\nprint(issubclass(C,A))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `True`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `False`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```class A:\n    def a(self):\n        print('a')\n\n\nclass B:\n    def a(self):\n       \tprint('b')\n\n\nclass C(B,A):\n    def c(self):\n   \t    self.a()\n\n\no = C()\no.c()\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `b`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `a`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет `c`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```class A:\n    def __str__(self):\n        return 'a'\n\n\nclass B:\n    def __str__(self):\n        return 'b'\n\n\nclass C(A, B):\n    pass\n    \n\no = C()\nprint(o)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `a`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `b`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет `c`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```class A:\n    v = 2\n\n\nclass B(A):\n    v = 1\n\n\nclass C(B):\n    pass\n\n\no = C()\nprint(o.v)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `1`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет пустую строку",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```def f(x):\n    try:\n        x = x / x\n    except:\n        print(\"a\",end='')\n    else:\n        print(\"b\",end='')\n    finally:\n        print(\"c\",end='')\n\n\nf(1)\nf(0)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `bcac`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `bcbc`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет `acac`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```try:\n    raise Exception(1,2,3)\nexcept Exception as e:\n    print(len(e.args))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `3`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```class Ex(Exception):\n    def __init__(self,msg):\n        Exception.__init__(self,msg + msg)\n        self.args = (msg,)\n\n\ntry:\n    raise Ex('ex')\nexcept Ex as e:\n    print(e)\nexcept Exception as e:\n    print(e)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `ex`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `exex`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет пустую строку",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каким будет результат выполнения следующего кода?\n\n\n```class I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n\tdef __iter__(self):\n        return self\n\n\tdef __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n\n\nfor x in I():\n    print(x,end='')\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "код выведет `ex`",
+                    "correct": true
+                },
+                {
+                    "answer": "код выведет `exex`",
+                    "correct": false
+                },
+                {
+                    "answer": "код выведет пустую строку",
+                    "correct": false
+                },
+                {
+                    "answer": "будет вызвано необработанное исключение",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,54 @@
+{
+    "title": "ОБЪЕКТНО-ОРИЕНТИРОВАННОЕ ПРОГРАММИРОВАНИЕ НА PYTHON",
+    "tags": {
+        "$ref": "./material-tags.json"
+    },
+    "materialType": "course",
+    "materials": [
+        {
+            "$ref": "03-object-oriented-programming/03.01-foundations-of-OOP/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.02-procedurel-vs-OOP-approach/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.03-lab-counting-stack/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.04-lab-queue-aka-FIFO-1/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.05.-lab-queue-aka-FIFO-2/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.06-properties/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.07-methods/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.08-lab-the-timer-class/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.09-lab-days-of-the-week/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.10-lab-points-on-a-plane/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.11-lab-triangle/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.12-inheritance/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.13-exceptions-once-again/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.14-test/learn-metadata.json"
+        },
+        {
+            "$ref": "03-object-oriented-programming/03.15-exam/learn-metadata.json"
+        }
+    ]
+}
