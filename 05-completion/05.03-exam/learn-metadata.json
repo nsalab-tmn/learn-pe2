@@ -1,0 +1,1334 @@
+{
+    "materialType": "test-exam",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 3,
+    "duration": "PT1H00M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Значение аргумента _по ключевому слову_ определяется его:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "именем и значением, присвоенным ему",
+                    "correct": true
+                },
+                {
+                    "answer": "позицией в списке аргументов",
+                    "correct": false
+                },
+                {
+                    "answer": "связью с существующими переменными",
+                    "correct": false
+                },
+                {
+                    "answer": "только присвоенным ему значением",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какие из следующих выражений о коде ниже **верны**?\n\n\n```str_1 = 'string'\nstr_2 = str_1[:]\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`str_1` и `str_2` - разные (но равные) строки",
+                    "correct": true
+                },
+                {
+                    "answer": "`str_1` и `str_2` - разные имена одной и той же строки",
+                    "correct": false
+                },
+                {
+                    "answer": "`str_1` длиннее чем `str_2`",
+                    "correct": false
+                },
+                {
+                    "answer": "`str_2` длиннее чем `str_1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какой оператор следует использовать, чтобы проверить, **равны** ли два значения?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`==`",
+                    "correct": true
+                },
+                {
+                    "answer": "`===`",
+                    "correct": false
+                },
+                {
+                    "answer": "`=`",
+                    "correct": false
+                },
+                {
+                    "answer": "`is`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какое из утверждений о коде ниже **верно**?\n\n\n```def fun(par2, par1):\n    return par2 + par1\n\n\nprint(fun(par2=1, 2))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код содержит ошибку",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `3`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какое значение будет присвоено переменной `x`?\n\n\n```z = 2\ny = 1\nx = y < z or z > y and y > z or z < y\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`True`",
+                    "correct": true
+                },
+                {
+                    "answer": "`False`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего кода?\n\n\n```my_string = 'abcdef'\n\n\ndef fun(s):\n    del s[2]\n    return s\n\n\nprint(fun(my_string))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Программа вызовет ошибку",
+                    "correct": true
+                },
+                {
+                    "answer": "Программа выведет `abdef`",
+                    "correct": false
+                },
+                {
+                    "answer": "Программа выведет `abcef`",
+                    "correct": false
+                },
+                {
+                    "answer": "Программа выведет `acdef`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```x, y, z = 3, 2, 1\nz, y, x = x, y, z\nprint(x, y, z)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`1 2 3`",
+                    "correct": true
+                },
+                {
+                    "answer": "`1 2 2`",
+                    "correct": false
+                },
+                {
+                    "answer": "`3 2 1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2 1 3`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```a = True\nb = False\na = a or b\nb = a and b\na = a or b\nprint(a, b)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`True False`",
+                    "correct": true
+                },
+                {
+                    "answer": "`True True`",
+                    "correct": false
+                },
+                {
+                    "answer": "`False False`",
+                    "correct": false
+                },
+                {
+                    "answer": "`False True`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего кода?\n\n\n```def fun(x):\n    return 1 if x % 2 != 0 else 2\n\n\nprint(fun(fun(1)))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Программа выведет `1`",
+                    "correct": true
+                },
+                {
+                    "answer": "Программа выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Программа выведет `None`",
+                    "correct": false
+                },
+                {
+                    "answer": "Программа вызовет ошибку выполнения",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о строке кода ниже **верно**?\n\n\n```print(len((1, )))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `0`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код содержит ошибку",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего кода?\n\n\n```d = {1: 0, 2: 1, 3: 2, 0: 1}\nx = 0\n\nfor y in range(len(d)):\n    x = d[x]\n\nprint(x)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `0`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет ошибку выполнения",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего фрагмента кода, если пользователь вводит две строки, содержащие `1` и `2` соответственно?\n\n\n```y = input()\nx = input()\nprint(x + y)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`21`",
+                    "correct": true
+                },
+                {
+                    "answer": "`12`",
+                    "correct": false
+                },
+                {
+                    "answer": "`3`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какое из утверждений о коде ниже **верно**?\n\n\n```print(\"a\", \"b\", \"c\", sep=\"'\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `a'b'c`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `abc`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `a b c`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код содержит ошибку",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего фрагмента кода?\n\n\n```v = 1 + 1 // 2 + 1 / 2 + 2\nprint(v)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`3.5`",
+                    "correct": true
+                },
+                {
+                    "answer": "`4`",
+                    "correct": false
+                },
+                {
+                    "answer": "`4.0`",
+                    "correct": false
+                },
+                {
+                    "answer": "`3`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего фрагмента кода?\n\n\n```t = (1, )\nt = t[0] + t[0]\nprint(t)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`2`",
+                    "correct": true
+                },
+                {
+                    "answer": "`(1, 1)`",
+                    "correct": false
+                },
+                {
+                    "answer": "`(1,)`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего фрагмента кода?\n\n\n```x = 16\nwhile x &gt; 0:\n    print('*', end='')\n    x //= 2\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `*****`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `***`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `*`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код войдет в бесконечный цикл",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего фрагмента кода?\n\n\n```d = {'one': 1, 'three': 3, 'two': 2}\n\nfor k in sorted(d.values()):\n    print(k, end=' ')\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`1 2 3`",
+                    "correct": true
+                },
+                {
+                    "answer": "`3 2 1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2 3 1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`3 1 2`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего фрагмента кода?\n\n\n```print(len([i for i in range(0, ‑2)]))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`0`",
+                    "correct": true
+                },
+                {
+                    "answer": "`3`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какая строка **правильно** вызывает функцию, определенную ниже?\n\n\n```def fun(a, b, c=0):\n    # function body\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```fun(a=1, b=0, c=0)\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```fun(0)\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```fun(1, c=2)\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```fun(b=0, b=0)\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего фрагмента кода?\n\n\n```my_list = [1, 2, 3, 4]\n\nmy_list = list(map(lambda x: 2*x, my_list))\nprint(my_list)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `2 4 6 8`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `1 2 3 4`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `10`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет ошибку выполнения",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Сколько звездочек (`*`) следующий фрагмент отправит на консоль?\n\n`i = 4\n\nwhile i &gt; 0 :\n    i -= 2\n    print(\"*\")\n    if i == 2:\n        break\nelse:\n    print(\"*\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "одну",
+                    "correct": true
+                },
+                {
+                    "answer": "две",
+                    "correct": false
+                },
+                {
+                    "answer": "ноль",
+                    "correct": false
+                },
+                {
+                    "answer": "Код войдет в бесконечный цикл, постоянно печатая `*` в каждой строке.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```t = (1, 2, 3, 4)\nt = t[‑2:‑1]\nt = t[‑1]\nprint(t)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`3`",
+                    "correct": true
+                },
+                {
+                    "answer": "`(3)`",
+                    "correct": false
+                },
+                {
+                    "answer": "`(3,)`",
+                    "correct": false
+                },
+                {
+                    "answer": "`33`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```d = {}\nd['2'] = [1, 2]\nd['1'] = [3, 4]\n\nfor x in d.keys():\n    print(d[x][1], end=\"\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`24`",
+                    "correct": true
+                },
+                {
+                    "answer": "`42`",
+                    "correct": false
+                },
+                {
+                    "answer": "`13`",
+                    "correct": false
+                },
+                {
+                    "answer": "`31`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какое утверждение о коде ниже **верно**?\n\n\n```def fun(d, k, v):\n    d[k] = v\n\n\nmy_dictionary = {}\nprint(fun(my_dictionary, '1', 'v'))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `None`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `v`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код содержит ошибку",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Сколько пустых строк следующий код отправит на консоль?\n\n\n```my_list = [[c for c in range(r)] for r in range(3)]\n\nfor element in my_list:\n    if len(element) < 2:\n        print()\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`две`",
+                    "correct": true
+                },
+                {
+                    "answer": "`одну`",
+                    "correct": false
+                },
+                {
+                    "answer": "`ноль`",
+                    "correct": false
+                },
+                {
+                    "answer": "`три`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Зная, что функция с именем `f()` находится в модуле с именем `m`, а код содержит следующий оператор `import`:\n\n\n```from f import m\n\n```\n\n\nВыберите правильный способ вызова функции:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Функцию нельзя вызвать, потому что инструкция `import` некорректна.",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```mod:f()\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```mod.f()\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```f()\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каталог/папка пакета может содержать файл, предназначенный для инициализации пакета. Как он называется?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`__init__.py`",
+                    "correct": true
+                },
+                {
+                    "answer": "`init.py`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__init__.`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__init.py__`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Как называется каталог/папка, созданная Python для хранения файлов `pyc`?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`__pycache__`",
+                    "correct": true
+                },
+                {
+                    "answer": "`__pyc__`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__pycfiles__`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__cache__`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода, расположенного в файле `module.py`?\n\n\n```print(__name__)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`__main__`",
+                    "correct": true
+                },
+                {
+                    "answer": "`module.py`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__module.py__`",
+                    "correct": false
+                },
+                {
+                    "answer": "`main`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что Вы можете сделать, если хотите сообщить пользователям своего модуля, что к определенной переменной не следует **обращаться напрямую**?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Начать ее имя с `_` или `__`",
+                    "correct": true
+                },
+                {
+                    "answer": "Начать ее имя с заглавной буквы",
+                    "correct": false
+                },
+                {
+                    "answer": "Написать ее имя только строчными буквами",
+                    "correct": false
+                },
+                {
+                    "answer": "Использовать ее номер вместо имени",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если внутри блока `try:` есть ветвь `finally:`, мы можем сказать, что:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "ветвь `finally:` всегда будет выполняться",
+                    "correct": true
+                },
+                {
+                    "answer": "ветвь `finally:` будет выполняться, когда нет ветви `else:`",
+                    "correct": false
+                },
+                {
+                    "answer": "ветвь `finally:` не будет выполняться, если не возникнет исключение",
+                    "correct": false
+                },
+                {
+                    "answer": "ветвь `finally:` не будет выполняться, если выполняется какая-либо из ветвей `except:`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```try:\n    raise Exception\nexcept BaseException:\n    print(\"a\", end='')\nelse:\n    print(\"b\", end='')\nfinally:\n    print(\"c\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`ac`",
+                    "correct": true
+                },
+                {
+                    "answer": "`bc`",
+                    "correct": false
+                },
+                {
+                    "answer": "`ab`",
+                    "correct": false
+                },
+                {
+                    "answer": "`a`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```class A:\n    def __init__(self,name):\n        self.name = name\n\n\na = A(\"class\")\nprint(a)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Строка, оканчивающаяся длинным шестнадцатеричным числом",
+                    "correct": true
+                },
+                {
+                    "answer": "Число",
+                    "correct": false
+                },
+                {
+                    "answer": "`name`",
+                    "correct": false
+                },
+                {
+                    "answer": "`class`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего кода?\n\n\n```try:\n    raise Exception\nexcept:\n    print(\"c\")\nexcept BaseException:\n    print(\"a\")\nexcept Exception:\n    print(\"b\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код вызовет ошибку",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `a`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `b`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `c`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```class X:\n    pass\n\n\nclass Y(X):\n    pass\n\n\nclass Z(Y):\n    pass\n\n\nx = X()\nz = Z()\nprint(isinstance(x, Z), isinstance(z, X))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`True False`",
+                    "correct": false
+                },
+                {
+                    "answer": "`False True`",
+                    "correct": true
+                },
+                {
+                    "answer": "`False False`",
+                    "correct": false
+                },
+                {
+                    "answer": "`True True`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего кода?\n\n\n```x = \"\\\"\nprint(len(x))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код вызовет ошибку",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `3`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего кода?\n\n\n```x = \"\"\"\n\"\"\"\nprint(len(x))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `3`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет ошибку",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если конструктор класса объявлен, как показано ниже: \n\n\n```class Class:\n    def __init__(self):\n        pass\n\n```\n\n\nкакое присваивание является **верным**?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```object = Class()```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```object = Class(1)```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```object = Class(None)```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```object = Class(1,2)```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```class A:\n    A = 1\n    def __init__(self, v=2):\n        self.v = v + A.A\n        A.A += 1\n\n    def set(self, v):\n        self.v += v\n        A.A += 1\n        return \n\n\na = A()\na.set(2)\nprint(a.v)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`5`",
+                    "correct": true
+                },
+                {
+                    "answer": "`3`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`7`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```class A:\n    A = 1\n    def __init__(self):\n        self.a = 0\n\n\nprint(hasattr(A, 'A'))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`True`",
+                    "correct": true
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`False`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```class A:\n    pass\n\n\nclass B:\n    pass\n\n\nclass C(A, B):\n    pass\n\n\nprint(issubclass(C, A) and issubclass(C, B))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `True`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `False`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет пустую строку",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "С чем обычно связан поток `sys.stdout`?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "С экраном",
+                    "correct": true
+                },
+                {
+                    "answer": "С клавиатурой",
+                    "correct": false
+                },
+                {
+                    "answer": "С принтером",
+                    "correct": false
+                },
+                {
+                    "answer": "С устройтвом `null`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый эффект от выполнения следующего кода?\n\n\n```class A:\n    def __init__(self, v):\n        self._a = v + 1\n\n\na = A(0)\nprint(a._a)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `0`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет исключение `AttributeError`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```class A:\n    def __init__(self):\n        pass\n\n    def f(self):\n        return 1\n\n    def g():\n       \treturn self.f()\n\n\na = A()\nprint(a.g())\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код вызовет исключение",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `0`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `True`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```class A:\n    def a(self):\n       \tprint('a')\n\n\nclass B:\n    def a(self):\n        print('b')\n\n\nclass C(A, B):\n    def c(self):\n        self.a()\n\n\no = C()\no.c()\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `a`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `b`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `c`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Класс `Exception` содержит свойство с именем `args` - что это такое?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Кортеж",
+                    "correct": true
+                },
+                {
+                    "answer": "Строка",
+                    "correct": false
+                },
+                {
+                    "answer": "Словарь",
+                    "correct": false
+                },
+                {
+                    "answer": "Список",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```def fun(n):\n    s = ''\n    for i in range(n):\n        s += '*'\n        yield s\n\n\nfor x in fun(3):\n    print(x, end='')\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`******`",
+                    "correct": true
+                },
+                {
+                    "answer": "`****`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2***`",
+                    "correct": false
+                },
+                {
+                    "answer": "`*`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```def a(x):\n    def b():\n        return x + x\n    return b\n\n\nx = a('x')\ny = a('')\nprint(x() + y())\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`xx`",
+                    "correct": true
+                },
+                {
+                    "answer": "`x`",
+                    "correct": false
+                },
+                {
+                    "answer": "`xxxx`",
+                    "correct": false
+                },
+                {
+                    "answer": "`xxxxxx`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если `s` - это поток, открытый в режиме чтения, следующая строка:\n\n\n```q = s.readlines()\n\n```\n\n\nприсвоит `q`:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "список",
+                    "correct": true
+                },
+                {
+                    "answer": "строку",
+                    "correct": false
+                },
+                {
+                    "answer": "кортеж",
+                    "correct": false
+                },
+                {
+                    "answer": "словарь",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если Вы хотите записать содержимое байтового массива в поток, какой метод Вы можете использовать?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`write()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`writefrom()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`writeto()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`writebytearray()`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какие из следующих функций, предоставляемых модулем `os`, доступны как в Windows, так и в Unix? (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "`mkdir()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`chdir()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`getgid()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`getgroups()`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каково ожидаемое поведение следующего кода?\n\n\n```import os\n\nos.makedirs('pictures/thumbnails')\nos.rmdir('pictures')\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код вызовет ошибку",
+                    "correct": true
+                },
+                {
+                    "answer": "Код удалит каталоги `pictures` и `thumbnails`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код удалит только каталог `pictures`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код удалит только каталог `thumbnails`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```from datetime import datetime\n\ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%Y/%m/%d %H:%M:%S'))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`2019/11/27 11:27:22`",
+                    "correct": true
+                },
+                {
+                    "answer": "`19/11/27 11:27:22`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2019/Nov/27 11:27:22`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2019/November/27 11:27:22`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```from datetime import timedelta\n\ndelta = timedelta(weeks = 1, days = 7, hours = 11)\nprint(delta)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`14 days, 11:00:00`",
+                    "correct": true
+                },
+                {
+                    "answer": "`7 days, 11:00:00`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1 week, 7 days, 11 hours`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2 weeks, 11:00:00`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```import calendar  \n\nc = calendar.Calendar(calendar.SUNDAY)\n\nfor weekday in c.iterweekdays():\n    print(weekday, end=\" \")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`6 0 1 2 3 4 5`",
+                    "correct": true
+                },
+                {
+                    "answer": "`7 1 2 3 4 5 6`",
+                    "correct": false
+                },
+                {
+                    "answer": "`Su Mo Tu We Th Fr Sa`",
+                    "correct": false
+                },
+                {
+                    "answer": "`Su`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выберите **верные** утверждения. (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "_PyPI_ - это сокращение от Python Package Index",
+                    "correct": true
+                },
+                {
+                    "answer": "_PyPI_ является одним из многих существующих репозиториев Python",
+                    "correct": true
+                },
+                {
+                    "answer": "_PyPI_ - единственный существующий репозиторий Python",
+                    "correct": false
+                },
+                {
+                    "answer": "_PyPI_ - это сокращение от Python Package Installer",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какую операцию _pip_ Вы бы использовали, чтобы проверить, какие пакеты Python уже установлены?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`list`",
+                    "correct": true
+                },
+                {
+                    "answer": "`help`",
+                    "correct": false
+                },
+                {
+                    "answer": "`show`",
+                    "correct": false
+                },
+                {
+                    "answer": "`dir`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```my_string_1 = 'Bond'\nmy_string_2 = 'James Bond'\n\nprint(my_string_1.isalpha(), my_string_2.isalpha())\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`True False`",
+                    "correct": true
+                },
+                {
+                    "answer": "`False True`",
+                    "correct": false
+                },
+                {
+                    "answer": "`True True`",
+                    "correct": false
+                },
+                {
+                    "answer": "`False False`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выберите **верные** утверждения. (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Первый параметр метода класса **не** должен называться _self_",
+                    "correct": true
+                },
+                {
+                    "answer": "Если класс содержит метод `__init__`, он **не может** вернуть какое-либо значение",
+                    "correct": true
+                },
+                {
+                    "answer": "Первый параметр метода класса должен называться _self_",
+                    "correct": false
+                },
+                {
+                    "answer": "Если класс содержит метод `__init__`, он может возвращать значение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что такое PEP 8?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Документ, содержащий соглашения о кодировании и руководство по стилю для кода Python",
+                    "correct": true
+                },
+                {
+                    "answer": "Документ, описывающий график разработки и выпуска версий Python",
+                    "correct": false
+                },
+                {
+                    "answer": "Документ, описывающий расширение механизма импорта Python, которое улучшает совместное использование файлов исходного кода Python",
+                    "correct": false
+                },
+                {
+                    "answer": "Документ, содержащий соглашения о кодировании и руководство по стилю для кода C, включающего реализацию Python на языке C",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

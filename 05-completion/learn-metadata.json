@@ -1,0 +1,24 @@
+{
+    "title": "Завершение курса Основы Python 2",
+    "tags": {
+        "$ref": "./material-tags.json"
+    },
+    "materialType": "course",
+    "materials": [
+        {
+            "$ref": "05-completion/05.01-course-completed/learn-metadata.json"
+        },
+        {
+            "$ref": "05-completion/05.02-test/learn-metadata.json"
+        },
+        {
+            "$ref": "05-completion/05.03-exam/learn-metadata.json"
+        },
+        {
+            "$ref": "05-completion/05.04-earn-PCAP-certification/learn-metadata.json"
+        },
+        {
+            "$ref": "05-completion/05.05-congratulations/learn-metadata.json"
+        }
+    ]
+}

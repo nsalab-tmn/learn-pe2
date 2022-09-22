@@ -1,0 +1,894 @@
+{
+    "materialType": "test-exam",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 2,
+    "duration": "PT1H0M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Зная, что функция с именем `fun()` находится в модуле с именем `mod` и была импортирована с помощью следующего оператора:\n\n\n```from mod import fun\n\n```\n\n\nВыберите правильный способ вызова функции `fun()`:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```fun()\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```mod.fun()\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```mod:fun()\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```mod::fun()\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какой результат появится после запуска следующего кода?\n\n\n```import math\nprint(dir(math))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Список всех сущностей, находящихся в модуле `math`",
+                    "correct": true
+                },
+                {
+                    "answer": "Количество всех объектов, находящихся в модуле `math`",
+                    "correct": false
+                },
+                {
+                    "answer": "Строка, содержащая полное имя модуля",
+                    "correct": false
+                },
+                {
+                    "answer": "Сообщение об ошибке",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Скомпилированный байт-код Python хранится в файлах, имена которых заканчиваются на:\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`pyc`",
+                    "correct": true
+                },
+                {
+                    "answer": "`py`",
+                    "correct": false
+                },
+                {
+                    "answer": "`pyb`",
+                    "correct": false
+                },
+                {
+                    "answer": "`pc`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если предположить, что следующие три файла: `a.py`, `b.py` и `c.py` находятся в одном каталоге, какой будет вывод, полученный после запуска файла `c.py`?\n\n\n```# file a.py\nprint(\"a\", end='')\n    \n# file b.py\nimport a\nprint(\"b\", end='')\n    \n# file c.py\nprint(\"c\", end='')\nimport a\nimport b\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`cab`",
+                    "correct": true
+                },
+                {
+                    "answer": "`abc`",
+                    "correct": false
+                },
+                {
+                    "answer": "`bac`",
+                    "correct": false
+                },
+                {
+                    "answer": "`cba`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что выведет следующий код, расположенный в файле `p.py`?\n\n\n```print(__name__)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`__main__`",
+                    "correct": true
+                },
+                {
+                    "answer": "`p.py`",
+                    "correct": false
+                },
+                {
+                    "answer": "`__p.py__`",
+                    "correct": false
+                },
+                {
+                    "answer": "`main`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующее выражение:\n\n\n```from a.b import c\n\n```\n\n\nвызывает импорт:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "объекта `c` из модуля `b` из пакета `a`",
+                    "correct": true
+                },
+                {
+                    "answer": "объекта `c` из модуля `a` из пакета `b`",
+                    "correct": false
+                },
+                {
+                    "answer": "объекта `a` из модуля `b` из пакета `c`",
+                    "correct": false
+                },
+                {
+                    "answer": "объекта `b` из модуля `a` из пакета `c`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если после блока `try:` имеется несколько ветвей `except:`, мы можем сказать следующее:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "будет выполнено **не более одного** блока `except:`",
+                    "correct": true
+                },
+                {
+                    "answer": "будет выполнен **ровно один** блок `except:`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет выполнен **как минимум один** блок `except:`",
+                    "correct": false
+                },
+                {
+                    "answer": "**ни один** из блоков `except:` не будет выполнен",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```try:\n    raise Exception\nexcept BaseException:\n    print(\"a\")\nexcept Exception:\n    print(\"b\")\nexcept:\n    print(\"c\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`a`",
+                    "correct": true
+                },
+                {
+                    "answer": "`b`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "Сообщение об ошибке",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующая строка кода:\n\n\n```for line in open('text.txt', 'rt'):\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "**корректна**, поскольку `open` возвращает итератор",
+                    "correct": true
+                },
+                {
+                    "answer": "**некорректна**, поскольку `open` не возвращает итератор",
+                    "correct": false
+                },
+                {
+                    "answer": "**некорректна**, поскольку `open` не возвращает ничего",
+                    "correct": false
+                },
+                {
+                    "answer": "**корректна**, если `line` является списком",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат следующего кода?\n\n\n```try:\n    raise Exception\nexcept:\n    print(\"c\")\nexcept BaseException:\n    print(\"a\")\nexcept Exception:\n    print(\"b\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код содержит синтаксическую ошибку",
+                    "correct": true
+                },
+                {
+                    "answer": "`a`",
+                    "correct": false
+                },
+                {
+                    "answer": "`b`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующее выражение:\n\n\n```assert var != 0\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "остановит программу, когда `var == 0`",
+                    "correct": true
+                },
+                {
+                    "answer": "остановит программу, когда `var != 0`",
+                    "correct": false
+                },
+                {
+                    "answer": "некорректно",
+                    "correct": false
+                },
+                {
+                    "answer": "не имеет эффекта",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```x = \"\\\\\\\\\"\nprint(len(x))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "выведет `2`",
+                    "correct": true
+                },
+                {
+                    "answer": "выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "выведет `3`",
+                    "correct": false
+                },
+                {
+                    "answer": "вызовет ошибку",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```x = \"\\\\\\\"\nprint(len(x))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "will cause an error",
+                    "correct": true
+                },
+                {
+                    "answer": "выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "выведет `3`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```print(chr(ord('p') + 2))\n\n```\n\n\nвыведет:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`r`",
+                    "correct": true
+                },
+                {
+                    "answer": "`q`",
+                    "correct": false
+                },
+                {
+                    "answer": "`s`",
+                    "correct": false
+                },
+                {
+                    "answer": "`t`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Следующий код:\n\n\n```print(float(\"1.3\"))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "will raise a `ValueError` exception",
+                    "correct": false
+                },
+                {
+                    "answer": "выведет `1.3`",
+                    "correct": true
+                },
+                {
+                    "answer": "выведет `1,3`",
+                    "correct": false
+                },
+                {
+                    "answer": "выведет `13`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если конструктор класса объявлен следующим образом:\n\n\n```class Class:\n    def __init__(self, val=0):\n        pass\n\n```\n\n\nкакое присваивание является **неверным**?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```object = Class(1, 2)\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```object = Class(None)\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```object = Class(1)\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```object = Class()\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```class A:\n    def __init__(self, v=2):\n        self.v = v\n\n    def set(self, v=1):\n        self.v += v\n        return self.v\n\n\na = A()\nb = a\nb.set()\nprint(a.v)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`3`",
+                    "correct": true
+                },
+                {
+                    "answer": "`2`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```class A:\n    A = 1\n    def __init__(self):\n        self.a = 0\n\n\nprint(hasattr(A, 'a'))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`False`",
+                    "correct": true
+                },
+                {
+                    "answer": "`True`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0`",
+                    "correct": false
+                },
+                {
+                    "answer": "`1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```class A:\n    pass\n\n\nclass B(A):\n    pass\n\n\nclass C(B):\n    pass\n\n\nprint(issubclass(A, C))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `False`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `True`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Поток `sys.stderr` обычно связан с:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "экраном",
+                    "correct": true
+                },
+                {
+                    "answer": "клавиатурой",
+                    "correct": false
+                },
+                {
+                    "answer": "устройством null",
+                    "correct": false
+                },
+                {
+                    "answer": "принтером",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый эффект выполнения следующего кода?\n\n\n```class A:\n    def __init__(self, v):\n        self.__a = v + 1\n\n\na = A(0)\nprint(a.__a)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код вызовет исключение `AttributeError`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `0`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```class A:\n    def __init__(self):\n        pass\n\n\na = A(1)\nprint(hasattr(a, 'A'))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код вызовет исключение",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `True`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `False`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```class A:\n    def a(self):\n        print('a')\n\n\nclass B:\n    def a(self):\n        print('b')\n\n\nclass C(B, A):\n    def c(self):\n        self.a()\n\n\no = C()\no.c()\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `b`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `c`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `a`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```try:\n    raise Exception(1, 2, 3)\nexcept Exception as e:\n    print(len(e.args))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `3`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `2`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `1`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет необработанное исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```def my_fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n\n\nfor x in my_fun(2):\n    print(x, end='')\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `+`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `++`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `+++`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `++++++`",
+                    "correct": true
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```class I:\n    def __init__(self):\n        self.s = 'abc'\n        self.i = 0\n\n\tdef __iter__(self):\n        return self\n\n    def __next__(self):\n        if self.i == len(self.s):\n            raise StopIteration\n        v = self.s[self.i]\n        self.i += 1\n        return v\n\n\nfor x in I():\n    print(x, end='')\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `abc`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `012`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `cba`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `210`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```def o(p):\n    def q():\n        return '*' * p\n    return q\n\n\nr = o(1)\ns = o(2)\nprint(r() + s())\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет `***`",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет `**`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `*`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет `****`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если `s` - это поток, открытый в режиме _чтения_, следующая строка:\n\n\n```q = s.read(1)\n\n```\n\n\nсчитает:\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "один символ из потока",
+                    "correct": true
+                },
+                {
+                    "answer": "одну линию из потока",
+                    "correct": false
+                },
+                {
+                    "answer": "один буфер из потока",
+                    "correct": false
+                },
+                {
+                    "answer": "один килобайт из потока",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Предполагая, что вызов `open()` прошел успешно, следующий фрагмент:\n\n\n```for x in open('file', 'rt'):\n    print(x)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "считает файл построчно",
+                    "correct": true
+                },
+                {
+                    "answer": "считает файл посимвольно",
+                    "correct": false
+                },
+                {
+                    "answer": "считает весь файл",
+                    "correct": false
+                },
+                {
+                    "answer": "вызовет исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Если Вы хотите заполнить байтовый массив данными, считанными из потока, какой метод Вы можете использовать?\n    \n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`readinto()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`readbytes()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`readfrom()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`read()`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какую из следующих команд Вы бы использовали для проверки версии `pip`? (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```pip --version\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```pip3 --version\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```pip version\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```pip-version\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какую команду `pip` Вы бы использовали для удаления ранее установленного пакета?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```pip uninstall _packagename_\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```pip --uninstall _packagename_\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```pip delete _packagename_\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```pip --remove _packagename_\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Посмотрите на следующий код:\n\n\n```numbers = [0, 2, 7, 9, 10]\n# Вставьте здесь строку кода.\nprint(list(foo))\n\n```\n\n\nКакую строку Вы бы вставили, чтобы программа дала ожидаемый вывод?\n\n\n```[0, 4, 49, 81, 100]```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```foo = map(lambda num: num ** 2, numbers)\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```foo = filter(lambda num: num ** 2, numbers)\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```foo = lambda num: num ** 2, numbers\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```foo = lambda num: num * 2, numbers)\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Посмотрите на следующий код:\n\n\n```numbers = [i*i for i in range(5)]\n# Вставьте здесь строку кода.\nprint(foo)\n\n```\n\n\nКакую строку Вы бы вставили, чтобы программа дала ожидаемый вывод?\n\n\n```[1, 9]```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```foo = list(filter(lambda x: x % 2, numbers))\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```foo = list(map(lambda x: x % 2, numbers))\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```foo = list(filter(lambda x: x / 2, numbers))\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```foo = list(map(lambda x: x // 2, numbers))\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Посмотрите на код ниже:\n\n\n```import random\n\n#\n# Вставьте сюда строки кода.\n#\n\nprint(a, b, c)\n\n```\n\n\nКакие строки кода Вы бы вставили, чтобы программа могла вывести следующий результат:\n\n\n```6 82 0```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```a = random.randint(0, 100)\nb = random.randrange(10, 100, 3)\nc = random.choice((0, 100, 3))\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```a = random.randrange(10, 100, 3)\nb = random.randint(0, 100)\nc = random.choice((0, 100, 3))\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```a = random.choice((0, 100, 3))\nb = random.randrange(10, 100, 3)\nc = random.randint(0, 100)\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```a = random.randint(0, 100)\nb = random.choice((0, 100, 3))\nc = random.randrange(10, 100, 3)\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат следующего кода?\n\n\n```import os\n\nos.mkdir('pictures')\nos.chdir('pictures')\n\nprint(os.getcwd())\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Код выведет путь к созданному каталогу",
+                    "correct": true
+                },
+                {
+                    "answer": "Код выведет имя созданного каталога",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет содержимое созданного каталога",
+                    "correct": false
+                },
+                {
+                    "answer": "Код выведет владельца созданного каталога",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какую информацию можно прочитать с помощью функции `uname`, предоставляемой модулем `os`? (Выберите **два** ответа)\n\n\n```import os\n\nos.mkdir('pictures')\nos.chdir('pictures')\n\nprint(os.getcwd())\n\n```\n\n\n",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Имя ОС",
+                    "correct": true
+                },
+                {
+                    "answer": "Идентефикатор аппаратного обеспечения",
+                    "correct": true
+                },
+                {
+                    "answer": "Дату последнего входа в систему",
+                    "correct": false
+                },
+                {
+                    "answer": "Текущий путь",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат следующего кода?\n\n\n```from datetime import datetime\n\ndatetime_1 = datetime(2019, 11, 27, 11, 27, 22)\ndatetime_2 = datetime(2019, 11, 27, 0, 0, 0)\n\nprint(datetime_1 - datetime_2)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`11:27:22`",
+                    "correct": true
+                },
+                {
+                    "answer": "`0 days, 11:27:22`",
+                    "correct": false
+                },
+                {
+                    "answer": "`11 hours, 27 minutes, 22 seconds`",
+                    "correct": false
+                },
+                {
+                    "answer": "`0 days`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат следующего кода?\n\n\n```from datetime import timedelta\n\ndelta = timedelta(weeks = 1, days = 7, hours = 11)\nprint(delta * 2)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`28 days, 22:00:00`",
+                    "correct": true
+                },
+                {
+                    "answer": "`2 weeks, 14 days, 22 hours`",
+                    "correct": false
+                },
+                {
+                    "answer": "`7 days, 22:00:00`",
+                    "correct": false
+                },
+                {
+                    "answer": "Код вызовет исключение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат следующего кода?\n\n\n```import calendar  \n\ncalendar.setfirstweekday(calendar.SUNDAY)\nprint(calendar.weekheader(3))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`Sun Mon Tue Wed Thu Fri Sat`",
+                    "correct": true
+                },
+                {
+                    "answer": "`Su Mo Tu We Th Fr Sa`",
+                    "correct": false
+                },
+                {
+                    "answer": "`Tue`",
+                    "correct": false
+                },
+                {
+                    "answer": "`Tu`",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}
