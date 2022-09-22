@@ -1,0 +1,51 @@
+{
+    "title": "РАЗНОЕ",
+    "tags": {
+        "$ref": "./material-tags.json"
+    },
+    "materialType": "course",
+    "materials": [
+        {
+            "$ref": "04-miscellaneous/04.01-generators-and-closures/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.02-files/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.03-processing-text-and-binary-files/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.04-lab-character-frequency-histogram/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.05-lab-sorted-character-frequency-histogram/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.06-lab-evaluating-students-results/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.07-the-os-module/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.08-lab-os-module/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.09-datetime-module/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.10-datetime-and-time-modules/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.11-calendar-module/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.12-lab-calendar-module/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.13-test/learn-metadata.json"
+        },
+        {
+            "$ref": "04-miscellaneous/04.14-exam/learn-metadata.json"
+        }
+    ]
+}

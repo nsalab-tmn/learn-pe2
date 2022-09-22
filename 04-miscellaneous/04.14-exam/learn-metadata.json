@@ -1,0 +1,366 @@
+{
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H15M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Какое ключевое слово Вы бы использовали для определения анонимной функции?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`lambda`",
+                    "correct": true
+                },
+                {
+                    "answer": "`def`",
+                    "correct": false
+                },
+                {
+                    "answer": "`afun`",
+                    "correct": false
+                },
+                {
+                    "answer": "`yield`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выберите **верные** утверждения. (Выберите **два** ответа)",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Функция `lambda` может принимать **любое количество** аргументов.",
+                    "correct": true
+                },
+                {
+                    "answer": "Функция `lambda` может вычислять **только одно** выражение.",
+                    "correct": true
+                },
+                {
+                    "answer": "Функция `lambda` может принимать **максимум два** аргумента.",
+                    "correct": false
+                },
+                {
+                    "answer": "Функция `lambda` может вычислять **несколько** выражений.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Посмотрите на код ниже:\n\n\n```my_list = [1, 2, 3]\n# Вставьте здесь строку кода.\nprint(foo)\n\n```\n\n\nКакой фрагмент нужно вставить, чтобы программа выдала следующий результат (кортеж):\n\n\n```(1, 4, 27)```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`foo = tuple(map(lambda x: x**x, my_list))\n\n`",
+                    "correct": true
+                },
+                {
+                    "answer": "`foo = list(map(lambda x: x**x, my_list))\n\n`",
+                    "correct": false
+                },
+                {
+                    "answer": "`foo = tuple(map(lambda x: x*x, my_list))\n\n`",
+                    "correct": false
+                },
+                {
+                    "answer": "`foo = list(map(lambda x: x*x, my_list))\n\n`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Посмотрите на код ниже:\n\n\n```my_tuple = (0, 1, 2, 3, 4, 5, 6)\n# Вставьте здесь строку кода.\nprint(foo)\n\n```\n\n\nКакой фрагмент нужно вставить, чтобы программа выдала следующий результат (список):\n\n\n```[2, 3, 4, 5, 6]```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`foo = list(filter(lambda x: x-0 and x-1, my_tuple))\n\n`",
+                    "correct": true
+                },
+                {
+                    "answer": "`foo = tuple(filter(lambda x: x-0 and x-1, my_tuple))\n\n`",
+                    "correct": false
+                },
+                {
+                    "answer": "`foo = tuple(filter(lambda x: x>1, my_tuple))\n\n`",
+                    "correct": false
+                },
+                {
+                    "answer": "`foo = list(filter(lambda x: x==0 and x==1, my_tuple))\n\n`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```def I():\n    s = 'abcdef'\n    for c in s[::2]:\n        yield c\n\n\nfor x in I():\n    print(x, end='')\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "будет выведено `ace`",
+                    "correct": true
+                },
+                {
+                    "answer": "будет выведено `bdf`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет выведено `abcdef`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет выведена пустая строка",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```def fun(n):\n    s = '+'\n    for i in range(n):\n        s += s\n        yield s\n\n\nfor x in fun(2):\n    print(x, end='')\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "будет выведено `++++++`",
+                    "correct": true
+                },
+                {
+                    "answer": "будет выведено `+`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет выведено `++`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет выведено `+++`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```def o(p):\n    def q():\n        return '*' * p\n    return q\n\n\nr = o(1)\ns = o(2)\nprint(r() + s())\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "будет выведено `***`",
+                    "correct": true
+                },
+                {
+                    "answer": "будет выведено `**`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет выведено `*`",
+                    "correct": false
+                },
+                {
+                    "answer": "будет выведено `****`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какие из следующих режимов открытия позволяют выполнять операции **чтения**? (Выберите **два** ответа)",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`r`",
+                    "correct": true
+                },
+                {
+                    "answer": "`r+`",
+                    "correct": true
+                },
+                {
+                    "answer": "`w`",
+                    "correct": false
+                },
+                {
+                    "answer": "`a`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что означает значение, представление `errno.EEXIST`?",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Файл существует",
+                    "correct": true
+                },
+                {
+                    "answer": "Файл не существует",
+                    "correct": false
+                },
+                {
+                    "answer": "Неверный номер файла",
+                    "correct": false
+                },
+                {
+                    "answer": "Доступ запрещен",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```b = bytearray(3)\nprint(b)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`bytearray(b'\\x00\\x00\\x00')`",
+                    "correct": true
+                },
+                {
+                    "answer": "`bytearray(0, 0, 0)`",
+                    "correct": false
+                },
+                {
+                    "answer": "`bytearray(b'3')`",
+                    "correct": false
+                },
+                {
+                    "answer": "`3`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```import os\n\nos.mkdir('pictures')\nos.chdir('pictures')\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\nos.mkdir('tmp')\nos.chdir('../')\n\nprint(os.getcwd())\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Путь к каталогу `pictures`",
+                    "correct": true
+                },
+                {
+                    "answer": "Путь к каталогу `thumbnails`",
+                    "correct": false
+                },
+                {
+                    "answer": "Путь к каталогу `tmp`",
+                    "correct": false
+                },
+                {
+                    "answer": "Путь к `корневому` каталогу",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```import os\n\nos.mkdir('thumbnails')\nos.chdir('thumbnails')\n\nsizes = ['small', 'medium', 'large']\n\nfor size in sizes:\n    os.mkdir(size)\n\nprint(os.listdir())\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`['large', 'small', 'medium']`",
+                    "correct": true
+                },
+                {
+                    "answer": "`['.', 'large', 'small', 'medium']`",
+                    "correct": false
+                },
+                {
+                    "answer": "`['.', '..', 'large', 'small', 'medium']`",
+                    "correct": false
+                },
+                {
+                    "answer": "`[]`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```from datetime import date\n\ndate_1 = date(1992, 1, 16)\ndate_2 = date(1991, 2, 5)\n\nprint(date_1 - date_2)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`345 days, 0:00:00`",
+                    "correct": true
+                },
+                {
+                    "answer": "`345 days`",
+                    "correct": false
+                },
+                {
+                    "answer": "`345`",
+                    "correct": false
+                },
+                {
+                    "answer": "`345, 0:00:00`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```from datetime import datetime\n\ndatetime = datetime(2019, 11, 27, 11, 27, 22)\nprint(datetime.strftime('%y/%B/%d %H:%M:%S'))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`19/November/27 11:27:22`",
+                    "correct": true
+                },
+                {
+                    "answer": "`2019/Nov/27 11:27:22`",
+                    "correct": false
+                },
+                {
+                    "answer": "`2019/11/27 11:27:22`",
+                    "correct": false
+                },
+                {
+                    "answer": "`19/11/27 11:27:22`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какая программа даст следующий вывод:\n\n\n```Mo Tu We Th Fr Sa Su```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n\n\n```import calendar\n\nprint(calendar.weekheader(2))\n\n```\n\n\n",
+                    "correct": true
+                },
+                {
+                    "answer": "\n\n\n```import calendar\n\nprint(calendar.weekheader())\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```import calendar\n\nprint(calendar.weekheader(3))\n\n```\n\n\n",
+                    "correct": false
+                },
+                {
+                    "answer": "\n\n\n```import calendar\n\nprint(calendar.week)\n\n```\n\n\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый результат выполнения следующего кода?\n\n\n```import calendar  \n\nc = calendar.Calendar()\n\nfor weekday in c.iterweekdays():\n    print(weekday, end=\" \")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`0 1 2 3 4 5 6`",
+                    "correct": true
+                },
+                {
+                    "answer": "`1 2 3 4 5 6 7`",
+                    "correct": false
+                },
+                {
+                    "answer": "`Mo Tu We Th Fr Sa Su`",
+                    "correct": false
+                },
+                {
+                    "answer": "`Su Mo Tu We Th Fr Sa`",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

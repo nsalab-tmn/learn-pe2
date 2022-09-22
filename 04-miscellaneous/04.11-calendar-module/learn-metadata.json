@@ -1,0 +1,10 @@
+{
+    "title": "Модуль calendar",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 2,
+    "duration": "PT0H33M",
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "assetsPath": "assets"
+}

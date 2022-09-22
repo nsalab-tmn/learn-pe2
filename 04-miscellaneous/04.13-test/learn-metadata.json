@@ -1,0 +1,242 @@
+{
+    "materialType": "test",
+    "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
+    "difficulty": 1,
+    "duration": "PT0H15M",
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {},
+    "passingScore": 70,
+    "assetsPath": "assets",
+    "questions": [
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```def my_fun():\n    for num in range(3):\n        yield num\n\n\nfor i in my_fun():\n    print(i)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n`0\n1\n2`\n",
+                    "correct": true
+                },
+                {
+                    "answer": "`SyntaxError",
+                    "correct": false
+                },
+                {
+                    "answer": "`generator object my_fun at _some hex number_`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```foo = [i + i for i in range(5)]\nprint(foo)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`[0, 2, 4, 6, 8]`",
+                    "correct": true
+                },
+                {
+                    "answer": "`[1, 3, 5, 7, 9]`",
+                    "correct": false
+                },
+                {
+                    "answer": "\n`0\n2\n4\n6\n8`\n",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```x = lambda a, b: a ** b\nprint(x(2, 10))\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`1024`",
+                    "correct": true
+                },
+                {
+                    "answer": "`2222222222`",
+                    "correct": false
+                },
+                {
+                    "answer": "`SyntaxError`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выберите **верные** утверждения о функции `map()`. (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Функция `map()` может принимать **более** двух аргументов.",
+                    "correct": true
+                },
+                {
+                    "answer": "Второй аргумент функции `map()` может быть списком",
+                    "correct": true
+                },
+                {
+                    "answer": "Первый аргумент функции `map()` может быть списком",
+                    "correct": false
+                },
+                {
+                    "answer": "Функция `map()` может принимать **только** два аргумента.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Выберите **истинные** утверждения о функции `filter()`. (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Функция `filter()` имеет следующий синтаксис: `filter(function, iterable)`",
+                    "correct": true
+                },
+                {
+                    "answer": "Функция `filter()` возвращает итератор",
+                    "correct": true
+                },
+                {
+                    "answer": "Функция `filter()` **не** возвращает итератор",
+                    "correct": false
+                },
+                {
+                    "answer": "Функция `filter()` имеет следующий синтаксис: `filter(iterable, function)`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```numbers = (1, 2, 5, 9, 15)\n\ndef filter_numbers(num):\n    nums = (1, 5, 17)\n    if num in nums:\n        return True\n    else:\n        return False\n\n\nfiltered_numbers = filter(filter_numbers, numbers)\nfor n in filtered_numbers:\n    print(n)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "\n`1\n5`\n",
+                    "correct": true
+                },
+                {
+                    "answer": "`2, 9, 15`",
+                    "correct": false
+                },
+                {
+                    "answer": "`SyntaxError`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Какие из следующих утверждений **верны**? (Выберите **два** ответа)",
+            "answerType": "multiChoice",
+            "answers": [
+                {
+                    "answer": "Генерирование списка становится генератором при использовании в круглых скобках (т.е. `()`), а не в квадратных скобках (т.е. `[]`)",
+                    "correct": true
+                },
+                {
+                    "answer": "Функция `map()` создает копию своего второго аргумента и применяет к нему первый аргумент.",
+                    "correct": true
+                },
+                {
+                    "answer": "Оператор `yield` должен использоваться вне функций",
+                    "correct": false
+                },
+                {
+                    "answer": "Объявление функции `лямбда` такое же, как объявление обычной функции",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Два основных взаимоисключающих режима открытия файла называются:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "двоичный и текстовый",
+                    "correct": true
+                },
+                {
+                    "answer": "двоичный и троичный",
+                    "correct": false
+                },
+                {
+                    "answer": "текст и изображение",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Метод, способный считывать данные из файла в объект байтового массива, называется:",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`readinto()`",
+                    "correct": true
+                },
+                {
+                    "answer": "`readout()`",
+                    "correct": false
+                },
+                {
+                    "answer": "`readin()`",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что произойдет, если Вы запустите следующий код, предполагая, что каталог `d` уже существует?\n\n\n```import os\nos.mkdir(\"/a/b/c/d\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "Будет вызвано исключение `FileExistsError`",
+                    "correct": true
+                },
+                {
+                    "answer": "Будет вызвано исключение `DirectoryExistsError`",
+                    "correct": false
+                },
+                {
+                    "answer": "Python перезапишет существующий каталог",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Что произойдет, если Вы запустите следующий код?\n\n\n```import time\n\ntime.sleep(30)\nprint(\"Wake up!\")\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "По прошествии 30 секунд на экран будет выведена строка `Wake up!`",
+                    "correct": true
+                },
+                {
+                    "answer": "Строка `Wake up!` будет отображаться на экране тридцать раз в течение 30 секунд",
+                    "correct": false
+                },
+                {
+                    "answer": "Строка `Wake up!` будет отображаться на экране в течение 30 секунд.",
+                    "correct": false
+                }
+            ]
+        },
+        {
+            "question": "Каков ожидаемый вывод следующего кода?\n\n\n```import calendar\n\ncal = calendar.isleap(2019)\nprint(cal)\n\n```\n\n\n",
+            "answerType": "singleChoice",
+            "answers": [
+                {
+                    "answer": "`False`",
+                    "correct": true
+                },
+                {
+                    "answer": "`True`",
+                    "correct": false
+                },
+                {
+                    "answer": "`None`",
+                    "correct": false
+                }
+            ]
+        }
+    ]
+}

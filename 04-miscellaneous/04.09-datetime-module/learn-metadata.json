@@ -1,0 +1,10 @@
+{
+    "title": "Модуль datetime",
+    "materialType": "lecture",
+    "description": "",
+    "difficulty": 2,
+    "duration": "PT1H13M",
+    "skills": {},
+    "testProjectPath": "./README.md",
+    "assetsPath": "assets"
+}

@@ -1,0 +1,17 @@
+{
+    "title": "Гистограмма частоты символов",
+    "materialType": "lab",
+    "description": "",
+    "text": {
+        "$ref": "./README.md"
+    },
+    "assets": {
+        "$ref": "./assets"
+    },
+    "duration": "PT1H0M",
+    "difficulty": 2,
+    "tags": {
+        "$ref": "../../material-tags.json"
+    },
+    "skills": {}
+}
