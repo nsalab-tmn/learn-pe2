@@ -1,5 +1,5 @@
 {
-    "materialType": "test",
+    "materialType": "test-exam",
     "description": "Нажмите ``Начать прохождение`` для отображения вопросов и выберите самый подходящий ответ",
     "difficulty": 1,
     "duration": "PT0H15M",
